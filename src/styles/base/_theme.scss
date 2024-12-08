@@ -17,6 +17,7 @@
 	--button-primary-bg: #{palette.$primary-grey-900};
 	--button-primary-text: #{palette.$primary-white};
 	--button-primary-bg-hover: #{palette.$primary-grey-500};
+	--button-primary-border: #{palette.$primary-grey-300};
 
 	--button-secondary-bg: #{palette.$primary-beige-100};
 	--button-secondary-text: #{palette.$primary-grey-900};
@@ -53,6 +54,7 @@
 	// Input
 	--input-text: #{palette.$primary-beige-500};
 	--input-border: #{palette.$primary-beige-500};
+	--input-border-secondary: #{palette.$primary-grey-300};
 	--input-text-hover: #{palette.$primary-grey-900};
 	--input-border-hover: #{palette.$primary-grey-500};
 	--input-text-active: #{palette.$primary-grey-900};

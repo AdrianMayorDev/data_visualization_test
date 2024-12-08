@@ -1,11 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { INameFormLabelProps, NameFormLabel } from "./components/NameFormLabel";
-import { INameFormInputTextProps, NameFormInputText } from "./components/NameFormInputText";
-import { NameFormSubmit } from "./components/NameFormSubmit";
 import { NameFormResult } from "./components/NameFormResult/NameFormResult";
 import { NameFormComponentContext } from "./context/NameFormCopmonentContext";
+import { INameFormLabelProps, NameFormLabel } from "./components/NameFormLabel";
+import { INameFormInputTextProps, NameFormInputText } from "./components/NameFormInputText/NameFormInputText";
+import { INameFormSubmitProps, NameFormSubmit } from "./components/NameFormSubmit/NameFormSubmit";
 
 interface INameFormComponentProps {
 	children: React.ReactNode;
@@ -14,7 +14,7 @@ interface INameFormComponentProps {
 interface INameFormComponentComposition {
 	NameFormLabel: React.FC<INameFormLabelProps>;
 	NameFormInputText: React.FC<INameFormInputTextProps>;
-	NameFormSubmit: React.FC;
+	NameFormSubmit: React.FC<INameFormSubmitProps>;
 	NameFormResult: React.FC;
 }
 

@@ -1,11 +1,12 @@
 "use client";
 
-import { NameFormLayout } from "./layouts/NameFormLayout/NameFormLayout";
+import { NameFormLayout } from "@/layouts/NameFormLayout/NameFormLayout";
+import { NavbarLayout } from "@/layouts/NavbarLayout/NavbarLayout";
 
 export default function Home() {
 	return (
 		<body>
-			<nav style={{ height: "40px", width: "100%" }}></nav>
+			<NavbarLayout />
 			<main>
 				<NameFormLayout />
 			</main>

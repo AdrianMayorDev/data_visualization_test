@@ -1,4 +1,4 @@
-import { useNameFormContext } from "../hooks/useNameFormContext";
+import { useNameFormContext } from "../../hooks/useNameFormContext";
 import styles from "./NameForm.module.scss";
 
 const { nameFormContainer } = styles;
