@@ -1,14 +1,20 @@
-import { NameForm } from "@/app/components/NameForm/NameForm";
+import { NameForm } from "@/app/components/NameForm/components/NameForm";
+import { NameFormComponent } from "@/app/components/NameForm/NameFormComponent";
+import styles from "./NameFormLayout.module.scss";
+
+const { nameFormLayoutContainer } = styles;
 
 const NameFormLayout = () => {
 	return (
-		<section>
-			<h1>Name finder</h1>
-			<NameForm>
-				<NameForm.NameFormLabel htmlFor='name'>Name:</NameForm.NameFormLabel>
-				<NameForm.NameFormInputText label='name' />
-				<NameForm.NameFormSubmit></NameForm.NameFormSubmit>
-			</NameForm>
+		<section className={nameFormLayoutContainer}>
+			<NameFormComponent>
+				<NameForm>
+					<NameFormComponent.NameFormLabel htmlFor='name'>Name data Finder:</NameFormComponent.NameFormLabel>
+					<NameFormComponent.NameFormInputText label='name' />
+					<NameFormComponent.NameFormSubmit />
+				</NameForm>
+				<NameFormComponent.NameFormResult />
+			</NameFormComponent>
 		</section>
 	);
 };

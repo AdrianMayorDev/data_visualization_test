@@ -16,10 +16,17 @@
     3. Add accessible line-height
     4. Improve text rendering
   */
+html,
 body {
 	// line-height: 1.5;
-	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	-webkit-font-smoothing: antialiased;
+}
+
+main {
+	flex: 1;
 }
 
 /*
@@ -44,6 +51,11 @@ select {
 	font: inherit;
 	border: none;
 	padding: 0;
+}
+
+ul,
+li {
+	list-style-type: none;
 }
 
 /*
