@@ -26,6 +26,10 @@ const NameFormResult = () => {
 		return <p className={error}>Error, please try again</p>;
 	}
 
+	if (!age || !gender || nationality.length === 0) {
+		return <p className={error}>No name found</p>;
+	}
+
 	return (
 		<section className={nameFormResult}>
 			<h2> {nameDisplay}</h2>
