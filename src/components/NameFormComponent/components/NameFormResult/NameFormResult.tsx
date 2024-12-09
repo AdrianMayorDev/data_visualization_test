@@ -5,7 +5,7 @@ import styles from "./NameFormResult.module.scss";
 import defaultData from "@/data/defaultData.json";
 import AgeComponent from "./components/AgeComponent";
 import GenderComponent from "./components/GenderComponent";
-import NationalityComponent from "./components/NationalityComponent";
+import NationalityComponent from "./components/NationalityComponent/NationalityComponent";
 import { useNameFormContext } from "../../hooks/useNameFormContext";
 import Image from "next/image";
 import SVGSpinner from "/public/svg-spinner.svg";

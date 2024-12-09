@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { NameFormResult } from "./components/NameFormResult/NameFormResult";
-import { NameFormComponentContext } from "./context/NameFormCopmonentContext";
+import { NameFormComponentContext } from "./context/NameFormComponentContext";
 import { INameFormLabelProps, NameFormLabel } from "./components/NameFormLabel";
 import { INameFormInputTextProps, NameFormInputText } from "./components/NameFormInputText/NameFormInputText";
 import { INameFormSubmitProps, NameFormSubmit } from "./components/NameFormSubmit/NameFormSubmit";

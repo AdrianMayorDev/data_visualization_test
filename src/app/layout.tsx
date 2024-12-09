@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ClientProvider from "../redux/ClientProvider";
 import "./main.scss";
+import { NavbarLayout } from "@/layouts/NavbarLayout/NavbarLayout";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -14,9 +15,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<ClientProvider>
-				<body>{children}</body>
-			</ClientProvider>
+			<body>
+				<header>
+					<NavbarLayout />
+				</header>
+				<ClientProvider>
+					<main>{children}</main>
+				</ClientProvider>
+			</body>
 		</html>
 	);
 }
