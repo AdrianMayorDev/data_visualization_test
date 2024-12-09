@@ -1,0 +1,22 @@
+.countryDataContainer {
+	display: flex;
+	align-items: center;
+	gap: spacing.$spacing-150;
+	padding: spacing.$spacing-200 spacing.$spacing-50;
+	// height: 80px;
+	border-bottom: 1px solid var(--input-border-secondary);
+
+	&:last-child {
+		padding-bottom: 0;
+		border: none;
+	}
+
+	&:first-child {
+		padding-top: 0;
+	}
+}
+
+.countryFlag {
+	border-radius: 4px;
+	border: 1px solid var(--input-border-secondary);
+}
