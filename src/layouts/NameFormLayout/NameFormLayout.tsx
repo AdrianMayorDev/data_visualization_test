@@ -1,3 +1,4 @@
+"use client";
 import { NameFormComponent } from "@/components/NameFormComponent/NameFormComponent";
 import styles from "./NameFormLayout.module.scss";
 import { NameForm } from "@/components/NameFormComponent/components/NameForm/NameForm";

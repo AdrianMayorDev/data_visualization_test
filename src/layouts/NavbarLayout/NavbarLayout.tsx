@@ -7,7 +7,8 @@ const NavbarLayout = () => {
 	return (
 		<nav className={navBarContainer}>
 			<ul>
-				<NavbarItem href='/'> Name Finder</NavbarItem>
+				<NavbarItem href='/'> Home</NavbarItem>
+				<NavbarItem href='/name'> Name Finder</NavbarItem>
 				<NavbarItem href='/covid'> COVID Data</NavbarItem>
 			</ul>
 		</nav>
