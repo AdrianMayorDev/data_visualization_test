@@ -1,3 +1,5 @@
+Deploy: https://data-visualization-test-p88o8uu9d-adrianmayors-projects.vercel.app
+
 ## Getting Started
 
 First, install the dependencies:
@@ -24,7 +26,7 @@ pnpm dev
 bun dev
 ```
 
-Edit `.env.example` file to add your backend server URL
+Edit `.env` file to add your backend server URL
 
 ---
 
