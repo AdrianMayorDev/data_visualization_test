@@ -1,0 +1,18 @@
+.nameFormResult {
+	margin-top: spacing.$spacing-300;
+	min-height: 574.4px;
+
+	h2 {
+		@include typography.heading1;
+		text-transform: capitalize;
+	}
+
+	&__dataSection {
+		padding: spacing.$spacing-400 0;
+	}
+
+	.error {
+		@include typography.body-text-bold;
+		color: palette.$secondary-red;
+	}
+}

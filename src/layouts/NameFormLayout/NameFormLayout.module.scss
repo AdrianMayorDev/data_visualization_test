@@ -1,0 +1,10 @@
+.nameFormLayoutContainer {
+	max-width: 500px;
+	width: 100%;
+	padding: 0 spacing.$spacing-200;
+
+	&__cardForm {
+		display: flex;
+		gap: spacing.$spacing-100;
+	}
+}

@@ -1,0 +1,8 @@
+.nameFormSubmit {
+	@include typography.body-text-bold;
+	height: 40px;
+	padding: spacing.$spacing-100 spacing.$spacing-200;
+	border-radius: 40px;
+	background-color: var(--background-secondary);
+	color: var(--text-tertiary);
+}

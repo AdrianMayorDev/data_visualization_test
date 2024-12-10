@@ -1,0 +1,13 @@
+@use "@/styles/base/reset";
+@use "@/styles/base/theme";
+
+html {
+	@include typography.body-text;
+	background-color: var(--background-primary);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

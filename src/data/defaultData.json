@@ -1,0 +1,29 @@
+{
+	"name": "Adrian",
+	"ageData": { "age": 43 },
+	"genderData": { "gender": "male", "probability": 0.99 },
+	"nationalityData": {
+		"country": [
+			{
+				"country_id": "RO",
+				"probability": 0.44125599259567067
+			},
+			{
+				"country_id": "ID",
+				"probability": 0.02112638649523281
+			},
+			{
+				"country_id": "VE",
+				"probability": 0.01498853027859049
+			},
+			{
+				"country_id": "EC",
+				"probability": 0.011875691814433804
+			},
+			{
+				"country_id": "BO",
+				"probability": 0.011785617916277946
+			}
+		]
+	}
+}
