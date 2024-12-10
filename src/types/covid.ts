@@ -48,6 +48,6 @@ interface DailyEntry {
 	};
 }
 
-type DailyData = DailyEntry[];
+type DailyData = { data: DailyEntry[] };
 
 export type { DailyData };
