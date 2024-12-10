@@ -1,3 +1,5 @@
+import { HomePageLayout } from "@/layouts/HomePageLayout/HomePageLayout";
+
 export default function Home() {
-	return <main>Home Page</main>;
+	return <HomePageLayout />;
 }

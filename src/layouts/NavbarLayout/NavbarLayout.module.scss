@@ -1,6 +1,7 @@
 .navBarContainer {
 	background-color: var(--background-primary);
-	padding: spacing.$spacing-200;
+	padding-left: spacing.$spacing-200;
+	padding-top: spacing.$spacing-400;
 	@include typography.body-text-bold;
 	ul {
 		list-style: none;

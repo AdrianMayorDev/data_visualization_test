@@ -1,3 +1,7 @@
-.active {
-	border-bottom: 1px solid var(--input-border-active);
+.navBarItem {
+	padding-bottom: spacing.$spacing-200;
+
+	&.active {
+		border-bottom: 1px solid var(--input-border-active);
+	}
 }

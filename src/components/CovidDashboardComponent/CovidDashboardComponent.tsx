@@ -6,6 +6,7 @@ import SummaryCards from "./components/SummaryCards";
 import DateSelector from "./components/DateSelector";
 import CovidGraph from "./components/CovidGraph";
 import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
+import { BaseCard } from "../BaseCard/BaseCard";
 
 const CovidDashboardComponent = () => {
 	const { data, isLoading, isError } = useGetCovidDataQuery();
@@ -30,11 +31,11 @@ const CovidDashboardComponent = () => {
 			) : isError || !data ? (
 				<p>Error fetching data</p>
 			) : (
-				<>
+				<BaseCard>
 					<SummaryCards data={data} />
 					<CovidGraph data={data} dateRange={dateRange} />
 					<DateSelector dateRange={dateRange} onDateRangeChange={handleDateRangeChange} />
-				</>
+				</BaseCard>
 			)}
 		</>
 	);

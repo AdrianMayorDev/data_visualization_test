@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./NavbarItem.module.scss";
 import { usePathname } from "next/navigation";
 
-const { active } = styles;
+const { navBarItem, active } = styles;
 
 interface INavbarItemProps {
 	children: React.ReactNode;
@@ -17,7 +17,7 @@ const NavbarItem = ({ children, href }: INavbarItemProps) => {
 	const isActive = pathname === href;
 
 	return (
-		<li className={isActive ? active : ""}>
+		<li className={`${navBarItem} ${isActive ? active : ""}`}>
 			<Link href={href}>{children}</Link>
 		</li>
 	);
