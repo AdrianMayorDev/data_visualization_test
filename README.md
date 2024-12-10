@@ -1,5 +1,3 @@
-Deploy: https://data-visualization-test-p88o8uu9d-adrianmayors-projects.vercel.app
-
 ## Getting Started
 
 First, install the dependencies:
@@ -66,3 +64,7 @@ The project has the following structure:
 -   **TypeScript**: A programming language that adds static typing to JavaScript.
 -   **Redux**: A state management library for JavaScript apps.
 -   **Sass**: A CSS preprocessor that adds power and elegance to the basic language.
+
+## Deploy
+
+https://data-visualization-test.vercel.app/
