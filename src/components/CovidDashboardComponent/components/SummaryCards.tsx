@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import styles from "./SummaryCards.module.scss";
 import { DailyData } from "@/types/covid";

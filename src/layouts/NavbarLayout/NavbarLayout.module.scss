@@ -1,10 +1,11 @@
 .navBarContainer {
 	background-color: var(--background-primary);
-	padding: 1rem;
-
+	padding: spacing.$spacing-200;
+	@include typography.body-text-bold;
 	ul {
 		list-style: none;
 		display: flex;
-		gap: 1rem;
+		gap: spacing.$spacing-200;
+		border-bottom: 1px solid var(--input-border-tertiary);
 	}
 }

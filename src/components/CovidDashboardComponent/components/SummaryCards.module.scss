@@ -1,23 +1,16 @@
 .summaryCards {
 	display: flex;
-	gap: 1rem;
-
+	gap: spacing.$spacing-150;
+	flex-wrap: wrap;
 	&__card {
 		flex: 1;
-		padding: 1rem;
+		padding: spacing.$spacing-200;
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
-		// justify-content: space-evenly;
-		gap: 1rem;
-		border: 1px solid #ddd;
+		gap: spacing.$spacing-200;
+		border: 1px solid var(--input-border-secondary);
 		border-radius: 8px;
 		background: none;
-		text-align: center;
-
-		// p {
-		// 	font-size: 1.5rem;
-		// 	font-weight: bold;
-		// 	color: #333;
-		// }
 	}
 }

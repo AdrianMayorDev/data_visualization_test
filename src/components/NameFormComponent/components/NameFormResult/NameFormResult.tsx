@@ -7,10 +7,10 @@ import AgeComponent from "./components/AgeComponent";
 import GenderComponent from "./components/GenderComponent";
 import NationalityComponent from "./components/NationalityComponent/NationalityComponent";
 import { useNameFormContext } from "../../hooks/useNameFormContext";
-import Image from "next/image";
-import SVGSpinner from "/public/svg-spinner.svg";
+import { LoadingSpinner } from "@/components/LoadingSpinner/LoadingSpinner";
+import { BaseCard } from "@/components/BaseCard/BaseCard";
 
-const { nameFormResult, nameFormResult__dataSection, nameFormResult__loadingSpinner, error } = styles;
+const { nameFormResult, nameFormResult__dataSection, error } = styles;
 
 const NameFormResult = () => {
 	const { name } = useNameFormContext();
@@ -31,10 +31,10 @@ const NameFormResult = () => {
 	}
 
 	return (
-		<section className={nameFormResult}>
+		<BaseCard className={nameFormResult}>
 			<h2> {nameDisplay}</h2>
 			{ageFetching || genderFetching || nationalityFetching ? (
-				<Image className={nameFormResult__loadingSpinner} src={SVGSpinner} alt='Spinner Icon' height={40} width={40} />
+				<LoadingSpinner />
 			) : (
 				<>
 					<ul className={nameFormResult__dataSection}>
@@ -44,7 +44,7 @@ const NameFormResult = () => {
 					<NationalityComponent nationality={nationality} nationalityFetching={nationalityFetching} />
 				</>
 			)}
-		</section>
+		</BaseCard>
 	);
 };
 

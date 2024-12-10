@@ -38,12 +38,26 @@ const CovidGraph = ({ data, dateRange }: { data: DailyData; dateRange: [string, 
 					<YAxis tickFormatter={formatYAxis} />
 					<Tooltip />
 					<Legend />
-					<Line type='monotone' dataKey='cases.total.value' stroke='#8884d8' dot={false} activeDot={{ r: 8 }} name='Cases' />
-					<Line type='monotone' dataKey='testing.total.value' stroke='#82ca9d' dot={false} activeDot={{ r: 8 }} name='Tests' />
+					<Line
+						type='monotone'
+						dataKey='cases.total.value'
+						stroke='var(--graph-line-primary)'
+						dot={false}
+						activeDot={{ r: 8 }}
+						name='Cases'
+					/>
+					<Line
+						type='monotone'
+						dataKey='testing.total.value'
+						stroke='var(--graph-line-secondary)'
+						dot={false}
+						activeDot={{ r: 8 }}
+						name='Tests'
+					/>
 					<Line
 						type='monotone'
 						dataKey='outcomes.death.total.value'
-						stroke='#ff7300'
+						stroke='var(--graph-line-tertiary)'
 						dot={false}
 						activeDot={{ r: 8 }}
 						name='Deaths'

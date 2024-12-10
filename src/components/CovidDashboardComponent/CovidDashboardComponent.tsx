@@ -5,9 +5,9 @@ import { useGetCovidDataQuery } from "@/api/covid";
 import SummaryCards from "./components/SummaryCards";
 import DateSelector from "./components/DateSelector";
 import CovidGraph from "./components/CovidGraph";
-import { BaseCard } from "../BaseCard/BaseCard";
+import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
 
-const CovidDashboardContainer = () => {
+const CovidDashboardComponent = () => {
 	const { data, isLoading, isError } = useGetCovidDataQuery();
 	const [dateRange, setDateRange] = useState<[string, string]>(["", ""]);
 
@@ -19,20 +19,25 @@ const CovidDashboardContainer = () => {
 		}
 	}, [data]);
 
-	if (isLoading) return <p>Loading...</p>;
-	if (isError || !data) return <p>Error fetching data</p>;
-
 	const handleDateRangeChange = (newDateRange: [string, string]) => {
 		setDateRange(newDateRange);
 	};
 
 	return (
-		<BaseCard>
-			<SummaryCards data={data} />
-			<CovidGraph data={data} dateRange={dateRange} />
-			<DateSelector dateRange={dateRange} onDateRangeChange={handleDateRangeChange} />
-		</BaseCard>
+		<>
+			{isLoading ? (
+				<LoadingSpinner />
+			) : isError || !data ? (
+				<p>Error fetching data</p>
+			) : (
+				<>
+					<SummaryCards data={data} />
+					<CovidGraph data={data} dateRange={dateRange} />
+					<DateSelector dateRange={dateRange} onDateRangeChange={handleDateRangeChange} />
+				</>
+			)}
+		</>
 	);
 };
 
-export default CovidDashboardContainer;
+export default CovidDashboardComponent;
