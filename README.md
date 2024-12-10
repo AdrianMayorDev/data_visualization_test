@@ -24,7 +24,7 @@ pnpm dev
 bun dev
 ```
 
-Edit `.env.example` file to add your backend server URL
+Edit `.env` file to add your backend server URL
 
 ---
 
@@ -64,3 +64,7 @@ The project has the following structure:
 -   **TypeScript**: A programming language that adds static typing to JavaScript.
 -   **Redux**: A state management library for JavaScript apps.
 -   **Sass**: A CSS preprocessor that adds power and elegance to the basic language.
+
+## Deploy
+
+https://data-visualization-test.vercel.app/
