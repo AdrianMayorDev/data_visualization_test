@@ -11,7 +11,7 @@ This project uses **Next.js** to create a data visualization application. Below 
 
 - **NameFormComponent**: A compound component that handles the logic and presentation of the name search form.
 - **CovidDashboardComponent**: A container component that handles the business logic and presents the COVID-19 data.
-- **LoadingSpinner**: A reusable component to display a loading spinner.
+
 
 ## Design Patterns Used
 
