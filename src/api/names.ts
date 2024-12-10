@@ -4,13 +4,13 @@ import { appTestBackend } from "./api";
 const namesEndpoint = appTestBackend.injectEndpoints({
 	endpoints: (builder) => ({
 		getAge: builder.query<NameAge, NameAge["name"]>({
-			query: (name) => `/api/agify/${name}`,
+			query: (name) => `https://api.agify.io/?name=${name}`,
 		}),
 		getGender: builder.query<NameGender, NameGender["name"]>({
-			query: (name) => `/api/genderize/${name}`,
+			query: (name) => `https://api.genderize.io/?name=${name}`,
 		}),
 		getNationality: builder.query<NameNationality, NameNationality["name"]>({
-			query: (name) => `/api/nationalize/${name}`,
+			query: (name) => `https://api.nationalize.io/?name=${name}`,
 		}),
 	}),
 	overrideExisting: false,

@@ -4,7 +4,7 @@ import { appTestBackend } from "./api";
 const covidEnpoints = appTestBackend.injectEndpoints({
 	endpoints: (builder) => ({
 		getCovidData: builder.query<DailyData, void>({
-			query: () => `/api/covid/historical`,
+			query: () => `https://api.covidtracking.com/v2/us/daily.json`,
 		}),
 	}),
 	overrideExisting: false,
