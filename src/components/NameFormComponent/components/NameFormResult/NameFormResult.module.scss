@@ -1,10 +1,4 @@
 .nameFormResult {
-	position: relative;
-	background-color: var(--background-tertiary);
-	border-radius: 20px;
-	padding: spacing.$spacing-400;
-	border: 1px solid var(--input-border-secondary);
-	box-shadow: 0px 16px 32px -4px rgba(0, 0, 0, 0.1);
 	margin-top: spacing.$spacing-300;
 	min-height: 574.4px;
 
@@ -15,13 +9,6 @@
 
 	&__dataSection {
 		padding: spacing.$spacing-400 0;
-	}
-
-	&__loadingSpinner {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 	}
 
 	.error {

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import style from "./NationalityComponent.module.scss";
+import { DetailData } from "@/components/DetailData/DetailData";
 
 const { countryDataContainer, countryFlag } = style;
 
@@ -14,20 +14,18 @@ const NationalityComponent = ({ nationality }: NationalityComponentProps) => {
 	return (
 		<ul>
 			{nationality.map((country, index) => {
-				const countryName = regionNames.of(`${country.country_id}`);
+				const countryName = regionNames.of(`${country.country_id}`) || "Unknown";
 				return (
 					<li className={countryDataContainer} key={`${country.country_id}_${index}`}>
-						<Image
-							className={countryFlag}
-							alt={countryName!}
-							src={`http://purecatamphetamine.github.io/country-flag-icons/3x2/${country.country_id}.svg`}
-							width={71}
-							height={48}
+						<DetailData
+							imageSrc={`http://purecatamphetamine.github.io/country-flag-icons/3x2/${country.country_id}.svg`}
+							imageAlt={countryName!}
+							imageHeight={48}
+							imageWidth={71}
+							imageClassName={countryFlag}
+							detailText={countryName}
+							detailTextBold={`${(country.probability * 100).toFixed(2)}%`}
 						/>
-						<div>
-							<p>{countryName}</p>
-							<b>{(country.probability * 100).toFixed(2)}%</b>
-						</div>
 					</li>
 				);
 			})}

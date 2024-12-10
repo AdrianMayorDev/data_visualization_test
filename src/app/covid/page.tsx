@@ -1,5 +1,7 @@
+import { CovidDashboardLayout } from "@/layouts/CovidDashboardLayout/CovidDashBoardLayout";
+
 const covidPage = () => {
-	return <div>Pagina covid</div>;
+	return <CovidDashboardLayout />;
 };
 
 export default covidPage;

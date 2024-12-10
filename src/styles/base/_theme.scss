@@ -53,8 +53,9 @@
 
 	// Input
 	--input-text: #{palette.$primary-beige-500};
-	--input-border: #{palette.$primary-beige-500};
+	--input-border: #{palette.$primary-grey-500};
 	--input-border-secondary: #{palette.$primary-grey-300};
+	--input-border-tertiary: #{palette.$primary-grey-200};
 	--input-text-hover: #{palette.$primary-grey-900};
 	--input-border-hover: #{palette.$primary-grey-500};
 	--input-text-active: #{palette.$primary-grey-900};
@@ -63,6 +64,11 @@
 	--input-border-filled: #{palette.$primary-beige-500};
 	--input-helperText: #{palette.$primary-beige-500};
 	--input-label: #{palette.$primary-grey-500};
+
+	// Graph
+	--graph-line-primary: #{palette.$primary-grey-700};
+	--graph-line-secondary: #{palette.$tertiary-blue};
+	--graph-line-tertiary: #{palette.$secondary-red};
 }
 
 // Alternative theme
