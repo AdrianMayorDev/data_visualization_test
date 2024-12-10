@@ -3,6 +3,7 @@
 	padding-left: spacing.$spacing-200;
 	padding-top: spacing.$spacing-400;
 	@include typography.body-text-bold;
+	user-select: none;
 	ul {
 		list-style: none;
 		display: flex;
